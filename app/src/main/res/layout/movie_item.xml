@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/movieImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/movieImage"
+        android:gravity="center"
+        android:text="Movie Title"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/movieDesc"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/movieImage"
+        android:maxLines="4"
+        android:text="TextView" />
+</RelativeLayout>
